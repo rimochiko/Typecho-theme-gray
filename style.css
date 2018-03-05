@@ -1,0 +1,395 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+	min-width:700px;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a
+{
+	text-decoration:none;
+	color:#a89e8a;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container
+{
+	margin:0 auto;
+	width: 1000px;
+}
+
+.fl{float:left;}
+.fr{float:right;}
+
+/*公共*/
+body
+{
+	background: url(imgs/bg.jpg);
+	font-family: "微软雅黑";
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+.main
+{
+	width: 660px;
+	background: #fff;
+	margin: 20px auto 20px auto;
+	border-radius: 5px;
+}
+
+.header
+{
+	background: url(imgs/head.jpg) center 50px no-repeat;
+	width: 100%;
+	height: 150px;
+}
+
+.header .nav
+{
+	width: 500px;
+	height: 20px;
+	margin: 0 auto;
+	padding:30px 0 0 0;
+	display: block;
+}
+
+.header .nav li
+{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.header .nav li a
+{
+	color: #b0b0b2;
+	padding: 4px 10px;
+	border-radius: 10px;
+	background: #eef6e7;
+	transition:all 0.2s;
+}
+
+.header .nav li a:hover
+{
+	background: #b0b0b2;
+	color: #fff;
+}
+
+.article
+{
+	padding: 20px 40px 20px 40px;
+}
+
+.article-info
+{
+	height: 30px;
+	color: #ddd;
+}
+
+.article-guide
+{
+	margin: 4px 0 20px 0;
+	color:#b0b0b2;
+	line-height: 20px;
+}
+
+.article-info .title
+{
+	float: left;
+	letter-spacing: 4px;
+}
+
+.article-info .details
+{
+	float: right;
+}
+
+.article-title
+{
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 300;
+	padding-left: 30px;
+	background: url(imgs/155.gif) center left no-repeat;
+	transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+}
+
+.article-title:hover
+{
+	color: #989898;
+}
+
+.article-details
+{
+	font-family: "Georgia";
+	line-height: 18px;
+	font-size: 12px;
+}
+
+.article-content
+{
+	clear: both;
+	width: 100%;
+	font-size: 12px;
+	line-height: 24px;
+	color: #b0b0b2;	
+	letter-spacing: 4px;
+}
+
+.article-content img
+{
+	max-width:100%;
+	margin:5px 0;
+}
+
+
+.read-more
+{
+	margin-top: 10px;
+	color: inherit;
+	display: block;
+	text-align: center;
+	font-family: "Georgia";
+}
+
+.page
+{
+	text-align: center;
+	font-family: "Georgia";
+	color: #b0b0b2;
+}
+
+.page ol li 
+{
+	display: inline-block;
+}
+
+.page ol li a
+{
+	margin-right: 5px;
+	display: inline-block;
+}
+
+.page a:hover
+{
+	background: #eee;
+	border-radius: 10px;
+}
+
+.footer
+{
+	color: #b5b4b4;
+	font-family: "Georgia";
+	line-height: 24px;
+	font-size: 12px;
+	margin-top: 10px;
+	height: 54px;
+	background: url(imgs/footer.jpg) top center no-repeat;
+}
+
+.footer p
+{
+	text-align: center;
+	padding-top: 0px;
+}
+
+.footer a:hover
+{
+	background: #eee;
+	border-radius: 10px;
+}
+
+.comment
+{
+	padding:0px 40px 20px 40px;
+	color:#b0b0b2;
+}
+
+.comment h4
+{
+	text-align: center;
+}
+
+.comment-main-title
+{
+	line-height: 26px;
+	font-weight: 300;
+	color: #999;
+	padding-left: 26px;
+	background: url(imgs/151.gif) center left no-repeat;
+	float:left;
+	margin-bottom: 8px;
+}
+
+.comment-info
+{
+	float: right;
+	line-height: 26px;
+}
+
+.comment_head
+{
+	margin-top: 4px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.comment_data,.comment_body
+{
+	float: right;
+	width: 540px;
+
+}
+
+#comment-form
+{
+	padding:10px 0;
+}
+
+#comment-form p
+{
+	margin-bottom: 10px;
+	padding-left: 4px;
+}
+
+#comment-form input,#comment-form textarea
+{
+	width:100%;
+	border:1px solid #eee;
+	color:#383835;
+	font-family:"微软雅黑";
+	font-size:12px;
+	border-radius:10px;
+	outline:none;
+	transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+}
+
+#comment-form input
+{
+	height:20px;
+	padding:2px 5px;
+	margin-bottom:10px;
+}
+
+#comment-form input:focus
+{
+	border:1px solid #ccc;
+}
+
+#comment-form textarea:focus
+{
+	border:1px solid #ddd;
+}
+
+#comment-form textarea
+{
+	height:100px;
+	padding:2px 5px;
+	resize:none;
+	margin-bottom:10px;
+}
+
+#comment_list
+{
+	width: 100%;
+	clear: both;
+	margin-bottom: 40px;
+}
+
+#comment_list
+{
+	list-style-type: none;
+}
+
+#comment_list li
+{
+	padding: 6px 0;
+	clear: both;
+}
+
+#comment_list .comment_body
+{
+	padding: 4px 0;
+}
+
+.comment_data
+{
+	color:#aaa;
+	line-height: 20px;
+}
+
+.submit
+{
+	color: #b0b0b2;
+	padding: 4px 10px;
+	border-radius: 10px;
+	background: #eef6e7;
+	border: none;
+	outline: none;
+	transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	margin:0 auto;
+	width: 100%;
+	text-align:center;
+}
+
+
+.submit:hover
+{
+	background: #b0b0b2;
+	color: #fff;
+}
